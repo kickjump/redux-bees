@@ -2,7 +2,8 @@
   "name": "redux-bees",
   "version": "0.1.7",
   "description": "A nice, declarative way of managing JSON API calls with Redux",
-  "main": "lib/index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "prepublish": "rimraf lib && mkdir lib && npm run lib",
     "start": "webpack-dev-server --open",
@@ -36,11 +37,15 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "@types/query-string": "^5.0.0",
+    "@types/react-redux": "^5.0.10",
+    "@types/redux": "^3.6.0",
     "hoist-non-react-statics": "^2.2.2",
     "object-path-immutable": "^0.5.1",
     "object.omit": "^2.0.1",
     "query-string": "^4.3.4",
     "react": "*",
-    "react-redux": "*"
+    "react-redux": "*",
+    "typescript": "^2.5.3"
   }
 }
